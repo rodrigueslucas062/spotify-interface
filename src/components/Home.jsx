@@ -1,4 +1,4 @@
-import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play } from "lucide-react"
+import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat } from "lucide-react"
 import Image from "next/image"
 import Curtidas from "../../public/images/album/curtidas.jpg"
 import Samurai from "../../public/images/album/chippin-in.jpg"
@@ -130,6 +130,31 @@ const renderMainPlay = () => {
     )
 }
 
+const renderFooter = () => {
+    return (
+        <footer className="bg-zinc-800 border-t border-zinc-700 p-6 flex items-center justify-between">
+            <div className="flex items-center gap-3">
+                <Image src={Samurai} alt="Capa playlist" width={60} height={60} />
+                <div className="flex flex-col gap-1">
+                    <strong className="font-normal">Chippin' In</strong>
+                    <span className="text-xs text-zinc-400">Samurai</span>
+                </div>
+            </div>
+            <div className="flex flex-col items-center">
+                <div className="flex items-center gap-4">
+                    <Shuffle />
+                    <SkipBack />
+                    <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-white text-black">
+                        <Play />
+                    </button>
+                    <SkipForward />
+                    <Repeat />
+                </div>
+            </div>
+        </footer>
+    )
+}
+
 const Home = () => {
     return (
         <div className="h-screen flex flex-col">
@@ -139,9 +164,7 @@ const Home = () => {
                 {/* Main area*/}
                 {renderMainPlay()}
             </div>
-            <footer className="bg-zinc-800 border-t border-zinc-700 p-6">
-                footer
-            </footer>
+            {renderFooter()}
         </div>
     )
 }
