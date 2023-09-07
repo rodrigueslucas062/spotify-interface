@@ -1,44 +1,11 @@
-import { Home as HomeIcon, Search, Library, ChevronLeft, ChevronRight, Play, Shuffle, SkipBack, SkipForward, Repeat, LayoutList, Laptop2, Volume, Maximize, Mic2 } from "lucide-react"
 import Image from "next/image"
-import Curtidas from "../../public/images/album/curtidas.jpg"
-import Samurai from "../../public/images/album/chippin-in.jpg"
-import RiseRise from "../../public/images/album/rise-rise.jpg"
-import Tdi from "../../public/images/album/the-devil-in-i.jpg"
-import Archive from "../../public/images/album/archive.jpg"
-import Aderal from "../../public/images/album/aderal.jpg"
-
-const renderAside = () => {
-    return (
-        <aside className="w-72 bg-zinc-950 p-6">
-            <nav className="space-y-5">
-                <a href="" className="flex items-center gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
-                    <HomeIcon />
-                    Home
-                </a>
-                <a href="" className="flex items-center gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
-                    <Search />
-                    Search
-                </a>
-                <a href="" className="flex items-center gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
-                    <Library />
-                    Library
-                </a>
-            </nav>
-            <nav className="mt-10 pt-10 border-t border-zinc-800 flex flex-col gap-3">
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 1</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 2</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 3</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 4</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 5</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 6</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 7</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 8</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 9</a>
-                <a href="" className="text-sm text-zinc-400 hover:text-zinc-100">Playlist 10</a>
-            </nav>
-        </aside>
-    )
-}
+import Curtidas from "../../../public/images/album/curtidas.jpg"
+import Samurai from "../../../public/images/album/chippin-in.jpg"
+import RiseRise from "../../../public/images/album/rise-rise.jpg"
+import Tdi from "../../../public/images/album/the-devil-in-i.jpg"
+import Archive from "../../../public/images/album/archive.jpg"
+import Aderal from "../../../public/images/album/aderal.jpg"
+import { ChevronLeft, ChevronRight, Play } from "lucide-react"
 
 const renderMainPlay = () => {
     return (
@@ -124,67 +91,15 @@ const renderMainPlay = () => {
                         <strong className="font-semi-bold">Chippin' in</strong>
                         <span className="text-sm text-zinc-500">Chippin' in, de Samurai</span>
                     </a>
+                    <a href="" className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10">
+                        <Image className="w-auto" src={Tdi} alt="Capa playlist" width={190} height={190} />
+                        <strong className="font-semi-bold">The devil in i</strong>
+                        <span className="text-sm text-zinc-500">The Devil in I, de Slipknot</span>
+                    </a>
                 </div>
             </div>
         </main>
     )
 }
 
-const renderFooter = () => {
-    return (
-        <footer className="bg-zinc-800 border-t border-zinc-700 px-6 py-4 flex items-center justify-between">
-            <div className="flex items-center gap-3">
-                <Image src={Samurai} alt="Capa playlist" width={60} height={60} />
-                <div className="flex flex-col gap-1">
-                    <strong className="font-normal">Chippin' In</strong>
-                    <span className="text-xs text-zinc-400">Samurai</span>
-                </div>
-            </div>
-            <div className="flex flex-col items-center">
-                <div className="flex items-center gap-4">
-                    <Shuffle size={20} className="text-zinc-200" />
-                    <SkipBack size={20} className="text-zinc-200" />
-                    <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-white text-black">
-                        <Play />
-                    </button>
-                    <SkipForward size={20} className="text-zinc-200" />
-                    <Repeat size={20} className="text-zinc-200" />
-                </div>
-                <div className="flex items-center gap-2">
-                    <span className="text-xs text-zinc-400">0:31</span>
-                    <div className="h1 rounded-full w-96 bg-zinc-600">
-                        <div className="bg-zinc-200 w-40 h-1 rounded-full"></div>
-                    </div>
-                    <span className="text-xs text-zinc-400">4:16</span>
-                </div>
-            </div>
-            <div className="flex items-center gap-4">
-                <Mic2 size={20} />
-                <LayoutList size={20} />
-                <Laptop2 size={20} />
-                <div className="flex items-center gap-2">
-                    <Volume size={20} />
-                    <div className="h1 rounded-full w-24 bg-zinc-600">
-                        <div className="bg-zinc-200 w-10 h-1 rounded-full"></div>
-                    </div>
-                </div>
-                <Maximize size={20} />
-            </div>
-        </footer>
-    )
-}
-
-const Home = () => {
-    return (
-        <div className="h-screen flex flex-col">
-            <div className="flex flex-1">
-                {/* Aside area*/}
-                {renderAside()}
-                {/* Main area*/}
-                {renderMainPlay()}
-            </div>
-            {renderFooter()}
-        </div>
-    )
-}
-export default Home
+export default renderMainPlay;
