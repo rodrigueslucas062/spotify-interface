@@ -6,6 +6,7 @@ import Tdi from "../../../public/images/album/the-devil-in-i.jpg"
 import Archive from "../../../public/images/album/archive.jpg"
 import Aderal from "../../../public/images/album/aderal.jpg"
 import { ChevronLeft, ChevronRight, Play } from "lucide-react"
+import { saudacao } from "@/utils/saudacao"
 
 const renderMainPlay = () => {
     return (
@@ -18,7 +19,7 @@ const renderMainPlay = () => {
                     <ChevronRight />
                 </button>
             </div>
-            <h1 className="font-bold text-3xl mt-10 gap-4">Bom dia</h1>
+            <h1 className="font-bold text-3xl mt-10 gap-4">{saudacao()}</h1>
             <div className="grid grid-cols-3 gap-4">
                 <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
                     <Image src={Curtidas} alt="Capa playlist" width={90} height={90} />
