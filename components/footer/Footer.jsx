@@ -1,6 +1,6 @@
 const { Shuffle, SkipBack, Play, Repeat, Mic2, LayoutList, Laptop2, Volume, Maximize, SkipForward } = require("lucide-react")
 import Image from "next/image";
-import Samurai from "../../../public/images/album/chippin-in.jpg"
+import Samurai from "../../public/images/album/chippin-in.jpg"
 
 const renderFooter = () => {
     return (

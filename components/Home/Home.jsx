@@ -2,7 +2,6 @@ import renderMainPlay from "../main/Main"
 import renderFooter from "../footer/Footer"
 import renderAside from "../aside/Aside"
 
-
 const Home = () => {
     return (
         <div className="h-screen flex flex-col">

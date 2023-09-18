@@ -1,12 +1,12 @@
 import Image from "next/image"
-import Curtidas from "../../../public/images/album/curtidas.jpg"
-import Samurai from "../../../public/images/album/chippin-in.jpg"
-import RiseRise from "../../../public/images/album/rise-rise.jpg"
-import Tdi from "../../../public/images/album/the-devil-in-i.jpg"
-import Archive from "../../../public/images/album/archive.jpg"
-import Aderal from "../../../public/images/album/aderal.jpg"
+import Curtidas from "../../public/images/album/curtidas.jpg"
+import Samurai from "../../public/images/album/chippin-in.jpg"
+import RiseRise from "../../public/images/album/rise-rise.jpg"
+import Tdi from "../../public/images/album/the-devil-in-i.jpg"
+import Archive from "../../public/images/album/archive.jpg"
+import Aderal from "../../public/images/album/aderal.jpg"
 import { ChevronLeft, ChevronRight, Play } from "lucide-react"
-import { saudacao } from "@/utils/saudacao"
+import { saudacao } from "../../utils/saudacao" 
 
 const renderMainPlay = () => {
     return (
