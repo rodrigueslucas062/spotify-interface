@@ -1,5 +1,5 @@
 import Link from "next/link";
-const { HomeIcon, Search, Library } = require("lucide-react")
+const { HomeIcon, Search, Library, GalleryThumbnails,  } = require("lucide-react")
 
 const renderAside = () => {
     return (
@@ -23,9 +23,11 @@ const renderAside = () => {
                 </a>
             </div>
             <div className="flex-grow bg-neutral-900 space-y-1 p-2 rounded-b-lg">
-                <Link href="/whiteboard" className="text-sm text-zinc-400 hover:text-zinc-100">
-                    Whiteboard
-                </Link>
+                <div className="flex flex-col gap-3">
+                    <Link href="/whiteboard" className="text-sm text-zinc-400 hover:text-zinc-100 flex gap-3 p-1">
+                    <GalleryThumbnails />Whiteboard
+                    </Link>
+                </div>
             </div>
         </aside>
     )
