@@ -3,26 +3,30 @@ const { HomeIcon, Search, Library } = require("lucide-react")
 
 const renderAside = () => {
     return (
-        <aside className="w-72 bg-zinc-950 p-6">
-            <nav className="space-y-5">
-                <a href="" className="flex items-center gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
-                    <HomeIcon />
-                    Home
-                </a>
-                <a href="" className="flex items-center gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
-                    <Search />
-                    Search
-                </a>
-                <a href="" className="flex items-center gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
+        <aside className="flex-2 w-72 flex flex-col justify-between">
+            <div className="bg-zinc-950 space-y-3">
+                <div className="bg-zinc-800 space-y-1 rounded-lg">
+                    <a href="" className="flex items-center p-3 gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
+                        <HomeIcon />
+                        Home
+                    </a>
+                    <a href="" className="flex items-center p-3 gap-3 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
+                        <Search />
+                        Search
+                    </a>
+                </div>
+            </div>
+            <div className="bg-zinc-800 space-y-1 p-2 rounded-t-lg mt-3">
+                <a href="" className="flex items-center gap-3 p-1 text-xs font-semibold text-zinc-300 hover:text-neutral-50">
                     <Library />
                     Library
                 </a>
-            </nav>
-            <nav className="mt-10 pt-10 border-t border-zinc-800 flex flex-col gap-3">
+            </div>
+            <div className="flex-grow bg-neutral-900 space-y-1 p-2 rounded-b-lg">
                 <Link href="/whiteboard" className="text-sm text-zinc-400 hover:text-zinc-100">
                     Whiteboard
                 </Link>
-            </nav>
+            </div>
         </aside>
     )
 }
