@@ -15,7 +15,9 @@ const renderMainPlay = () => {
             <div className="bg-zinc-800 rounded-lg h-full">
                 <div className="p-4">
                     {/* Botão de Navegação */}
-                    <NavButton />
+                    <div className="flex items-center gap-4 mt-2">
+                        <NavButton />
+                    </div>
                     <h1 className="font-bold text-3xl mt-10 gap-4 mb-3">{saudacao()}</h1>
                     <div className="grid grid-cols-3 gap-4">
                         <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">

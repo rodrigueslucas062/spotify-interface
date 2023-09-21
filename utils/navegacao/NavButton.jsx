@@ -33,14 +33,15 @@ const NavButton = () => {
     }, [router])
 
     return (
-        <div className="flex items-center gap-4 mt-2">
+        <>
             <button className="rounded-full bg-black/40 p-2 hover:bg-white/10" onClick={handleVoltar}>
                 <ChevronLeft />
             </button>
             <button className="rounded-full bg-black/40 p-2 hover:bg-white/10" onClick={handleAvancar}>
                 <ChevronRight />
             </button>
-        </div>
+        </>
+
     )
 }
 
