@@ -33,15 +33,14 @@ const NavButton = () => {
     }, [router])
 
     return (
-        <>
+        <div>
             <button className="rounded-full bg-black/40 p-2 hover:bg-white/10" onClick={handleVoltar}>
                 <ChevronLeft />
             </button>
             <button className="rounded-full bg-black/40 p-2 hover:bg-white/10" onClick={handleAvancar}>
                 <ChevronRight />
             </button>
-        </>
-
+        </div>
     )
 }
 

@@ -24,8 +24,8 @@ const renderAside = () => {
             </div>
             <div className="flex-grow bg-neutral-900 space-y-1 p-2 rounded-b-lg">
                 <div className="flex flex-col gap-3">
-                    <Link href="/whiteboard" className="text-sm text-zinc-400 hover:text-zinc-100 flex gap-3 p-1">
-                    <GalleryThumbnails />Whiteboard
+                    <Link href="/whiteboard"  className="group rounded flex items-center gap-4 p-2 overflow-hidden hover:bg-zinc-800 transition-colors">
+                    <GalleryThumbnails />Blackboard
                     </Link>
                 </div>
             </div>
