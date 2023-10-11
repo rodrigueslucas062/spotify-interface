@@ -18,9 +18,6 @@ const NavButton = () => {
 
     useEffect(() => {
         setUltimaRota(router.asPath)
-    }, [])
-
-    useEffect(() => {
         const handleRouteChange = (url) => {
             setUltimaRota(url)
         }
