@@ -4,7 +4,7 @@ const atributos = ["INT", "REF", "TEC", "AuCon", "ATR", "SOR", "MOV", "TCO", "EM
 function criarDivsComClasses(arrayDeDados) {
     return arrayDeDados.map((item, index) => (
         <div className="flex gap-2" key={index}>
-            <input type="checkbox" />
+           <input type="radio" name="opcao" value="opcao1" />
             <span>{item}</span>
         </div>
     ));

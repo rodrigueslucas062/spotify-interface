@@ -62,7 +62,7 @@ const Ficha = () => {
                     <p className="p-2 w-full">Atord=3</p>
                     <p className="p-2 w-full">Atord=4</p>
                 </div>
-                <div className="flex space-x-2">
+                <div className="flex space-x-3 gap-8">
                     <div className="w-1/5">
                         <span>Mortal-2</span>
                         <div className="flex">
