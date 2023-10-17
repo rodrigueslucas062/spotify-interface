@@ -1,0 +1,24 @@
+//Main
+.play__button {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  gap: 16px;
+  overflow: hidden;
+  .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    padding-left: 4px;
+    background-color: $primary-color;
+  }
+}
+
+//Navbutton
+.nav__button {
+  border-radius: 100%;
+  padding: 8px;
+}

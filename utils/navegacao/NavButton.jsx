@@ -31,10 +31,10 @@ const NavButton = () => {
 
     return (
         <div>
-            <button className="rounded-full bg-black/40 p-2 hover:bg-white/10" onClick={handleVoltar}>
+            <button className="nav__button bg-black/40 p-2 hover:bg-white/10" onClick={handleVoltar}>
                 <ChevronLeft />
             </button>
-            <button className="rounded-full bg-black/40 p-2 hover:bg-white/10" onClick={handleAvancar}>
+            <button className="nav__button bg-black/40 p-2 hover:bg-white/10" onClick={handleAvancar}>
                 <ChevronRight />
             </button>
         </div>

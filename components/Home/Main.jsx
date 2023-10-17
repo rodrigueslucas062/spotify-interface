@@ -8,7 +8,6 @@ import Aderal from "../../public/images/album/aderal.jpg"
 import { Play } from "lucide-react"
 import { saudacao } from "../../utils/saudacao"
 import NavButton from "../../utils/navegacao/NavButton"
-import { getGitHubUserData } from "../../pages/api/githubData"
 
 const renderMainPlay = () => {
     const avatarUrl = 'https://avatars.githubusercontent.com/u/39422637?s=400&u=b6bddbc97edde098ad4d50599d99479aff0cb6d9&v=4';
@@ -27,45 +26,45 @@ const renderMainPlay = () => {
                     </div>
                     <h1 className="font-bold text-3xl mt-10 gap-4 mb-3">{saudacao()}</h1>
                     <div className="grid grid-cols-3 gap-4">
-                        <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                        <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
                             <Image src={Curtidas} alt="Capa playlist" width={90} height={90} />
                             <strong>Músicas Curtidas</strong>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
+                            <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
                                 <Play fill="black" />
                             </button>
                         </a>
-                        <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                        <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
                             <Image src={Samurai} alt="Capa playlist" width={90} height={90} />
                             <strong>Chippin' In</strong>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
+                            <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
                                 <Play fill="black" />
                             </button>
                         </a>
-                        <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                        <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
                             <Image src={RiseRise} alt="Capa playlist" width={90} height={90} />
                             <strong>Rise, Rise</strong>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
+                            <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
                                 <Play fill="black" />
                             </button>
                         </a>
-                        <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                        <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
                             <Image src={Tdi} alt="Capa playlist" width={90} height={90} />
                             <strong>The Devil In I</strong>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
+                            <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
                                 <Play fill="black" />
                             </button>
                         </a>
-                        <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                        <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
                             <Image src={Archive} alt="Capa playlist" width={90} height={90} />
                             <strong>Bullets</strong>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
+                            <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
                                 <Play fill="" />
                             </button>
                         </a>
-                        <a href="" className="bg-white/10 group rounded flex items-center gap-4 overflow-hidden hover:bg-white/20 transition-colors">
+                        <a href="" className="play__button bg-white/10 group hover:bg-white/20 transition-colors">
                             <Image src={Aderal} alt="Capa playlist" width={90} height={90} />
                             <strong>Aderal</strong>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full pl-1 bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
+                            <button className="play text-black ml-auto mr-8 invisible group-hover:visible">
                                 <Play fill="black" />
                             </button>
                         </a>
