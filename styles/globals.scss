@@ -7,6 +7,7 @@ body {
   @apply text-zinc-50;
 }
 
-@import './variables/variables.scss';
-@import '../styles/scss/layouts/layouts.scss';
-@import '../styles/scss/components/buttons.scss'
+@import "./variables/variables.scss";
+@import "../styles/scss/layouts/layouts.scss";
+@import "../styles/scss/components/buttons.scss";
+@import "../styles/scss/components/ficha.scss";
