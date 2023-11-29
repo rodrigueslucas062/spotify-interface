@@ -1,5 +1,5 @@
 import Link from "next/link";
-const { HomeIcon, Search, Library, GalleryThumbnails, Gamepad2,  } = require("lucide-react")
+const { HomeIcon, Search, Library, GalleryThumbnails, Gamepad2, QrCode, } = require("lucide-react")
 
 const renderAside = () => {
     return (
@@ -24,13 +24,18 @@ const renderAside = () => {
             </div>
             <div className="flex-grow bg-neutral-900 space-y-1 p-2 rounded-b-lg">
                 <div className="aside_item">
-                    <Link href="/whiteboard"  className="group hover:bg-zinc-800 transition-colors">
-                    <GalleryThumbnails />Blackboard
+                    <Link href="/whiteboard" className="group hover:bg-zinc-800 transition-colors">
+                        <GalleryThumbnails />Blackboard
                     </Link>
                 </div>
                 <div className="aside_item">
-                    <Link href="/personagem"  className="group overflow-hidden hover:bg-zinc-800 transition-colors">
-                    <Gamepad2 />Ficha
+                    <Link href="/personagem" className="group overflow-hidden hover:bg-zinc-800 transition-colors">
+                        <Gamepad2 />Ficha
+                    </Link>
+                </div>
+                <div className="aside_item">
+                    <Link href="/personagem" className="group overflow-hidden hover:bg-zinc-800 transition-colors">
+                        <QrCode />Linktree
                     </Link>
                 </div>
             </div>
